@@ -101,7 +101,7 @@ nav ul li a {
     border-top: 1px solid rgb(47, 0, 255);
     border-right: 1px solid rgb(5, 0, 0);
     border-radius: 15px;
-    font-size: 17px;
+    font-size: 13px;
 }
 nav ul li a:hover {
     color: yellow;
@@ -250,7 +250,7 @@ main {
 }
 .conten .child-berita .child-berita-kiri img {
     width: 100%;
-    height: 340px;
+    height: 220px;
     transition: 1s;
     transition: 1s;
     overflow: hidden;
@@ -275,11 +275,19 @@ main {
     transform: scale(1.2);
 
 }
-
+.conten .child-berita .child-berita-kiri a:hover span::before {
+    display: block;
+    position: absolute;
+    content: '11/22/2021';
+    width: 100%;
+    height: 30px;
+    top: 36px;
+    color: white;
+    transition: 1s;
+}
 .conten .child-berita .child-berita-kiri a:hover p {
     color: yellow;
 }
-
 .conten .child-berita .child-berita-kiri a:hover span {
     display: block;
     position: absolute;
@@ -301,7 +309,7 @@ main {
 }
 .conten .child-berita .child-berita-kanan img {
     width: 100%;
-    height: 340px;
+    height: 220px;
     transition: 1s;
     transform: scale(1.1);
 }
@@ -325,6 +333,16 @@ main {
 .conten .child-berita .child-berita-kanan a:hover p {
     color: yellow;
 }
+.conten .child-berita .child-berita-kanan a:hover span::before {
+    display: block;
+    position: absolute;
+    content: '11/22/2021';
+    width: 100%;
+    height: 30px;
+    top: 55px;
+    color: white;
+    transition: 1s;
+}
 .conten .child-berita .child-berita-kanan a:hover span {
     display: block;
     position: absolute;
@@ -339,6 +357,10 @@ main {
 
 
 
+
+
+
+
 /* =============================== container artikel ============== */
 .conten .container-artikel {
     width: 100%;
@@ -348,7 +370,7 @@ main {
 }
 .conten .container-artikel article {
     width: 32%;
-    height:350px;
+    height:300px;
     background-image: linear-gradient(to right, rgb(17, 0, 255), rgb(255, 255, 255));
     margin-bottom: 15px;
     border-radius: 5px;
@@ -364,19 +386,19 @@ main {
 }
 .conten .container-artikel article .gbr {
     width: 100%;
-    height: 170px;
+    height: 150px;
     background-color: violet;
 }
 .conten .container-artikel article .gbr img {
     width: 100%;
-    height: 170px;
+    height: 150px;
 }
 .conten .container-artikel article h1 {
     color: rgb(255, 255, 255);
     font-family:'Arial Narrow Bold', sans-serif;
     font-weight: bold;
     background-image: linear-gradient(to right, rgba(0, 4, 255, 0.493), rgba(247, 247, 247, 0.329));
-    font-size: 20px;
+    font-size: 17px;
     width: 100%;
     height: 100px;
     text-align: center;
@@ -437,7 +459,7 @@ aside .cari {
 }
 aside .cari input[type="text"] {
     width: 70%;
-    height: 30px;
+    height: 25px;
     border-radius: 5px;
     position: relative;
     display: flex;
@@ -446,7 +468,7 @@ aside .cari input[type="text"] {
 }
 aside .cari button {
     width: 25%;
-    height: 35px;
+    height: 30px;
     border-radius: 5px;
     position: relative;
     display: flex;
@@ -462,8 +484,8 @@ aside .cari button:hover {
 }
 /* --------------------------- my profile ------------------------------- */
 aside .my-profile {
-    width: 37%;
-    height: 46px;
+    width: 100%;
+    height: 400px; 
     transition: .30s;
     margin-bottom: 20px;
     border-radius: 5px;
@@ -471,12 +493,18 @@ aside .my-profile {
     overflow: hidden;
     background-image: linear-gradient(to right, rgba(39, 17, 238, 0.973), rgb(8, 1, 0));
 }
+.peb:checked ~ .my-profile {
+    width: 37%;
+    height: 46px;
+}
 .my-profile p:nth-child(1) {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin-left: 5px;
-    font-size: 25px;
+    font-size: 17px;
     margin-bottom: 7px;
     color: rgb(198, 210, 243);
+    font-weight: bold;
+    background-color: rgb(12, 8, 8);
 }
 .my-profile h1 {
     text-align: center;
@@ -515,10 +543,6 @@ aside .my-profile {
 }
 .peb:hover ~ .my-profile p:nth-child(1) {
     color: rgb(147, 230, 15);
-}
-.peb:checked ~ .my-profile {
-    width: 100%;
-    height: 400px; 
 }
 aside .ringkasan {
     width: 100%;
@@ -681,7 +705,6 @@ aside .iklan {
     font-family:'Arial Narrow Bold', sans-serif;
     color: rgb(151, 111, 105);
 }
-
 .footer .penjelasan p:nth-last-child() {
     cursor: copy;
 }
@@ -707,12 +730,70 @@ aside .iklan {
 
 
 
-/* ============= responsive ================= */
+/* ============================================= responsive ======================================== */
+
 /* ============================================= media query ======================================= */
 
 
-/* ------------------------------------------------- max  */
-@media only screen and (max-width: 767px) {
+
+
+
+
+
+/* ----------------------------------------------------------------- pc min normal  */
+@media only screen and (max-width: 1024px) {
+    .conten .child-berita .child-berita-kiri img {
+        height: 180px;
+    }
+    .conten .child-berita .child-berita-kanan img {
+        height: 180px;
+    }
+    .conten .top-berita p {
+        font-size: 19px;
+    }
+    .conten .child-berita .child-berita-kiri p {
+        font-size: 16px;
+    }
+    .conten .child-berita .child-berita-kanan p {
+        font-size: 16px;
+    }
+    .conten .container-artikel article {
+        height: 250px;
+    }
+    .conten .container-artikel article .gbr {
+        width: 100%;
+        height: 120px;
+        background-color: violet;
+    }
+    .conten .container-artikel article .gbr img {
+        width: 100%;
+        height: 120px;
+    }
+    .conten .container-artikel article h1 {
+        font-size: 15px; 
+    }
+    .conten .container-artikel article a {
+        font-size: 15px; 
+    }
+    .conten .container-artikel article p {
+        font-size: 10px;
+    }
+    aside .rekomen ul li a {
+        font-size: 14px;
+    }
+    aside .my-profile {
+        width: 100%;
+        height: 350px; 
+    }
+}
+
+
+
+
+
+
+/* ---------------------------------------------- tablet max */
+@media only screen and (max-width: 768px) {
     .logo .keterangan {
         width: 50%;
     }
@@ -772,13 +853,15 @@ aside .iklan {
         height: 25px;
     }
     .peb {
-        width: 50px;
+        width: 70px;
+        height: 10px;
     }
     aside .my-profile {
-        height: 30px;
+        width: 100%;
+        height: 280px; 
     }
     .my-profile p:nth-child(1) {
-        font-size: 10px;
+        font-size: 11px;
     }
     .my-profile h1 {
         font-size: 10px;
@@ -787,8 +870,10 @@ aside .iklan {
         font-size: 12px;
     }
     .peb:checked ~ .my-profile {
-        width: 100%;
-        height: 280px; 
+        height: 30px;
+    }
+    aside .iklan {
+        height: 230px;
     }
     aside .rekomen ul h1 {
         font-size: 17px;
@@ -812,407 +897,8 @@ aside .iklan {
 
 
 
-
-
-
-
-
-
-
-
-/* ------------------------------------------------- pc min width ---------------------------- */
-@media only screen and (min-width: 768px) {
-    .logo .keterangan {
-        width: 50%;
-    }
-    .logo .keterangan p {
-        font-size: 15px;
-    }
-    nav ul {
-        justify-content: flex-start;
-    }
-    nav ul li {
-        padding: 5px;
-        margin-right: 10px;
-    }
-    nav ul li a {
-        font-size: 12px;
-    }
-    .conten .top-berita p {
-        font-size: 15px;
-    }
-    .conten .child-berita .child-berita-kiri img {
-        height: 150px;
-    }
-    .conten .child-berita .child-berita-kiri p {
-        font-size: 12px;
-    }
-    .conten .child-berita .child-berita-kanan img {
-        height: 150px;
-    }
-    .conten .child-berita .child-berita-kanan p {
-        font-size: 12px;
-    }
-    .conten .container-artikel article {
-        height: 200px;
-    }
-    .conten .container-artikel article .gbr {
-        width: 100%;
-        height: 100px;
-        background-color: violet;
-    }
-    .conten .container-artikel article .gbr img {
-        width: 100%;
-        height: 100px;
-    }
-    .conten .container-artikel article h1 {
-        font-size: 12px; 
-    }
-    .conten .container-artikel article p {
-        font-size: 10px;
-    }
-    .conten .container-artikel article a {
-        font-size: 12px;
-    }
-    aside .cari input[type="text"] {
-        height: 20px;
-    }
-    aside .cari button {
-        height: 25px;
-    }
-    .peb {
-        width: 50px;
-    }
-    aside .my-profile {
-        height: 30px;
-    }
-    .my-profile p:nth-child(1) {
-        font-size: 10px;
-    }
-    .my-profile h1 {
-        font-size: 10px;
-    }
-    .my-profile .pe {
-        font-size: 12px;
-    }
-    .peb:checked ~ .my-profile {
-        width: 100%;
-        height: 280px; 
-    }
-    aside .rekomen ul h1 {
-        font-size: 17px;
-    }
-    aside .rekomen ul li a {
-        font-size: 12px;
-    }
-    .footer .penjelasan h1 {
-        font-size: 13px;
-    }
-    .footer .penjelasan h2 {
-        font-size: 13px;
-    }
-    .footer .penjelasan p {
-        font-size: 13px;
-    }
-  }
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-/* ------------------------------------------------- min 425 ------------------------------------ */
-
-  @media only screen and (max-width: 425px) {
-    .logo img {
-        width: 40%;
-        padding: 5px;
-        filter: drop-shadow(1px 1px 3px black);
-        transition: .20s;
-    }
-    .logo .keterangan {
-        width: 55%;
-    }
-    .logo .keterangan p {
-        font-size: 13px;
-    }
-    .logo .keterangan p:nth-child(2) {
-        margin-left: 0;
-    }
-    nav ul {
-        justify-content: center;
-    }
-    nav ul li {
-        padding: 2px;
-        margin-right: 3px;
-    }
-    nav ul li a {
-        font-size: 10px;
-    }
-    main {
-        width: 100%;
-    }
-    .conten .top-berita p {
-        font-size: 9px;
-        padding-left: 1px;
-    }
-    .conten .child-berita .child-berita-kiri img {
-        height: 100px;
-    }
-    .conten .child-berita .child-berita-kiri p {
-        font-size:9px;
-    } 
-    .conten .child-berita .child-berita-kanan img {
-        height: 100px;
-    }
-    .conten .child-berita .child-berita-kanan p {
-        font-size: 9px;
-    }
-    .conten .container-artikel article {
-        height: 150px;
-    }
-    .conten .container-artikel article .gbr {
-        width: 100%;
-        height: 55px;
-        background-color: violet;
-    }
-    .conten .container-artikel article .gbr img {
-        width: 100%;
-        height: 55px;
-    }
-    .conten .container-artikel article h1 {
-        font-size: 10px; 
-    }
-    .conten .container-artikel article p {
-        font-size: 8px;
-    }
-    .conten .container-artikel article a {
-        font-size: 9px;
-    }
-    aside .cari {
-        margin-bottom: 3px;
-    }
-    aside .cari input[type="text"] {
-        height: 10px;
-        width: 68px;
-    }
-    aside .cari button {
-        height: 15px;
-        width: 36%;
-    }
-    aside .my-profile {
-        height: 30px;
-        width: 70%;
-        margin-bottom: 10px;
-    }
-    .my-profile p:nth-child(1) {
-        font-size: 10px;
-    }
-    .my-profile h1 {
-        font-size: 10px;
-    }
-    .my-profile .pe {
-        font-size: 8px;
-    }
-    .peb:checked ~ .my-profile {
-        width: 100%;
-        height: 220px; 
-    }
-    aside .rekomen ul h1 {
-        font-size: 13px;
-    }
-    aside .iklan {
-        height: 200px;
-    }
-    aside .rekomen ul li a {
-        font-size: 9px;
-    }
-    .footer .penjelasan h1 {
-        font-size: 13px;
-    }
-    .footer .penjelasan h2 {
-        font-size: 13px;
-    }
-    .footer .penjelasan p {
-        font-size: 13px;
-    }
-    .footer .ichon li a img {
-        width: 20px;
-        /* height: 20; */
-        transition: .30s;
-    }
-    aside .iklan {
-        font-size: 13px;
-    }
-  }
-
-
-
-
-
-
-
-
-
-
-/* =-=============================================== max widt 425 mobile ==================== */
-  @media only screen and (max-width: 425px) {
-    .logo {
-        display: flex;
-        flex-direction: column;
-    }
-    .logo img {
-        width: 40%;
-        padding: 5px;
-        filter: drop-shadow(1px 1px 3px black);
-        transition: .20s;
-    }
-    .logo .keterangan {
-        width: 55%;
-        display: none;
-    }
-    .logo .keterangan p {
-        font-size: 13px;
-    }
-    .logo .keterangan p:nth-child(2) {
-        margin-left: 0;
-    }
-    nav ul li {
-        padding: 2px;
-    }
-    nav ul li a {
-        font-size: 10px;
-    }
-    main {
-        width: 100%;
-        flex-direction: column;
-    }
-    .conten {
-        width: 100%;
-    }
-    .conten .top-berita p {
-        font-size: 13px;
-        padding-left: 1px;
-    }
-    .conten .child-berita .child-berita-kiri img {
-        height: 140px;
-    }
-    .conten .child-berita .child-berita-kiri p {
-        font-size:12px;
-    } 
-    .conten .child-berita .child-berita-kanan img {
-        height: 140px;
-    }
-    .conten .child-berita .child-berita-kanan p {
-        font-size: 12px;
-    }
-    .conten .container-artikel article {
-        height: 230px;
-        width: 48%;
-    }
-    .conten .container-artikel article .gbr {
-        width: 100%;
-        height: 120px;
-        background-color: violet;
-    }
-    .conten .container-artikel article .gbr img {
-        width: 100%;
-        height: 120px;
-    }
-    .conten .container-artikel article h1 {
-        font-size: 15px; 
-    }
-    .conten .container-artikel article p {
-        font-size: 10px;
-    }
-    .conten .container-artikel article a {
-        font-size: 15px;
-    }
-    aside {
-        width: 100%;
-    }
-    aside .cari {
-        margin-bottom: 3px;
-        margin-bottom: 10px;
-    }
-    aside .cari input[type="text"] {
-        height: 30px;
-        width: 60%;
-    }
-    aside .cari button {
-        height: 35px;
-        width: 37%;
-    }
-    aside .my-profile {
-        height: 50px;
-        width: 50%;
-        margin-bottom: 15px;
-    }
-    .my-profile p:nth-child(1) {
-        font-size: 18px;
-        padding: 3px;
-    }
-    .my-profile h1 {
-        font-size: 15px;
-    }
-    .my-profile .pe {
-        font-size: 15px;
-    }
-    .peb:checked ~ .my-profile {
-        width: 100%;
-        height: 440px; 
-    }
-    .peb {
-        -webkit-appearance: block;
-        width: 30%;
-        height: 20px;
-    }
-    aside .rekomen ul h1 {
-        font-size: 20px;
-    }
-    aside .iklan {
-        height: 240px;
-    }
-    aside .rekomen ul li a {
-        font-size: 15px;
-    }
-    .footer .penjelasan h1 {
-        font-size: 13px;
-    }
-    .footer .penjelasan h2 {
-        font-size: 13px;
-    }
-    .footer .penjelasan p {
-        font-size: 13px;
-    }
-    .footer .ichon li a img {
-        width: 20px;
-        transition: .30s;
-    }
-    aside .iklan {
-        font-size: 13px;
-    }
-  }
-
-
-
-
-
-
-
-
-
-
-  /* =-=============================================== max widt 375 mobile ======================== */
-  @media only screen and (max-width: 320px) {
+/* =-=============================================== max widt 375 mobile ======================== */
+ @media only screen and (max-width: 320px) {
 
     .logo {
         display: flex;
@@ -1241,6 +927,7 @@ aside .iklan {
     }
     nav ul li {
         margin-bottom: 10px;
+        padding-top: 10px;
     }
     nav ul li a {
         font-size: 10px;
@@ -1268,7 +955,6 @@ aside .iklan {
     .conten .child-berita .child-berita-kanan p {
         font-size: 10px;
     }
-    /*  */
     .conten .container-artikel article {
         height: 200px;
         width: 48%;
@@ -1307,12 +993,12 @@ aside .iklan {
         width: 37%;
     }
     aside .my-profile {
-        height: 50px;
-        width: 50%;
+        width: 100%;
+        height: 400px; 
         margin-bottom: 15px;
     }
     .my-profile p:nth-child(1) {
-        font-size: 18px;
+        font-size: 14px;
         padding: 3px;
     }
     .my-profile h1 {
@@ -1322,8 +1008,8 @@ aside .iklan {
         font-size: 15px;
     }
     .peb:checked ~ .my-profile {
-        width: 100%;
-        height: 440px; 
+        height: 50px;
+        width: 50%;
     }
     .peb {
         position: absolute;
@@ -1369,6 +1055,9 @@ aside .iklan {
         transition: .30s;
     }
     aside .iklan {
+        font-size: 13px;
+    }
+    .footer p {
         font-size: 13px;
     }
   }
