@@ -1,0 +1,1443 @@
+/* =========================================== body ======================================== */
+body {
+    background-color: rgb(60, 60, 170);
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+/* ================================================= logo ====================================== */
+.logo {
+    width: 100%;
+    background-image: linear-gradient(to right, rgb(17, 0, 255), rgb(255, 255, 255));
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    width: 20%;
+    padding: 5px;
+    filter: drop-shadow(1px 1px 3px black);
+    transition: .20s;
+}
+.logo img:hover {
+    transform: rotate(5deg);
+}
+.logo .keterangan {
+    width: 40%;
+    height: 70px;
+    transition: 2s;
+    opacity: 0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top: 2px solid rgb(47, 0, 255);
+    border-right: 2px solid rgb(47, 0, 255);
+}
+.logo .keterangan p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    cursor: default;
+}
+.logo .keterangan p:nth-child(2) {
+    margin-left: 100px;
+}
+
+.logo img:hover ~ .keterangan {
+    opacity: 1;
+    color: rgb(208, 240, 238);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* =================================================== HEADER ========================================= */
+header {
+    display: flex;
+    background-image: linear-gradient(to right, rgb(17, 0, 255), rgb(255, 255, 255));
+    width: 100%;
+    z-index: 999;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    
+}
+/* == nav == */
+nav {
+    width: 100%;
+} 
+/* == ul == */
+nav ul {
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 2px solid black;
+    padding: 5px;
+}
+nav ul li {
+    padding: 10px;
+    margin-right: 20px;
+}
+nav ul li a {
+    padding: 5px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    filter: drop-shadow(1px 1px 1px black);
+    transition: .20s;
+    font-family:'Arial Narrow Bold', sans-serif;
+    border-top: 1px solid rgb(47, 0, 255);
+    border-right: 1px solid rgb(5, 0, 0);
+    border-radius: 15px;
+    font-size: 13px;
+}
+nav ul li a:hover {
+    color: yellow;
+    background-color: rgb(24, 36, 216);
+}
+
+
+
+
+/* ==================== warna aktif halaman ==================== */
+nav ul li .news {
+    color: yellow;
+    background-color: rgb(24, 36, 216);
+}
+
+
+
+
+
+
+
+
+/* ================================================== MAIN =========================================== */
+main {
+    top: 50px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+/* ============================================== conten ================================== */
+.conten {
+    width: 69%;
+    background-image: linear-gradient(to right, rgb(17, 0, 255), rgb(186, 196, 240));
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -======================================== top news ===================================== */
+.conten .top-berita {
+    width: 100%;
+    margin-bottom: 15px;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 0 4px 1px black;
+}
+.conten .top-berita img {
+    width: 100%;
+    transition: 1s;
+    transform: scale(1.1);
+}
+.conten .top-berita p {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-family:'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0.801), rgba(0, 4, 255, 0));
+    padding-left: 5px;
+    z-index: 1;
+}
+.conten .top-berita a:hover  img {
+    transform: scale(1.2);
+}
+.conten .top-berita a:hover p {
+    color: yellow;
+}
+.conten .top-berita a:hover span {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(10, 6, 248, 0.171);
+    transition: .30s;
+}
+.conten .top-berita a:hover span::before {
+    display: block;
+    position: absolute;
+    content: '11/22/2021';
+    width: 100%;
+    height: 30px;
+    top: 50px;
+    color: white;
+    transition: 1s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================= child berita ===================== */
+.conten .child-berita {
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+/* -------------------------------------------- kiri ------------------------------ */
+.conten .child-berita .child-berita-kiri {
+    width: 49%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 4px 1px black;
+}
+.conten .child-berita .child-berita-kiri img {
+    width: 100%;
+    height: 220px;
+    transition: 1s;
+    transition: 1s;
+    overflow: hidden;
+    transform: scale(1.1);
+}
+.conten .child-berita .child-berita-kiri p {
+    position: absolute;
+    top: 0;
+    color: rgb(255, 255, 255);
+    font-family:'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0.801), rgba(0, 4, 255, 0));
+    font-size: 17px;
+    width: 100%;
+    z-index: 1;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: .30s;
+    padding-left: 5px;
+}
+.conten .child-berita .child-berita-kiri a:hover img {
+    transform: scale(1.2);
+
+}
+.conten .child-berita .child-berita-kiri a:hover span::before {
+    display: block;
+    position: absolute;
+    content: '11/22/2021';
+    width: 100%;
+    height: 30px;
+    top: 36px;
+    color: white;
+    transition: 1s;
+}
+.conten .child-berita .child-berita-kiri a:hover p {
+    color: yellow;
+}
+.conten .child-berita .child-berita-kiri a:hover span {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(216, 191, 216, 0.075);
+    transition: .30s;
+}
+/* ------------------------------------------- kanan ---------------------------------- */
+.conten .child-berita .child-berita-kanan {
+    width: 49%;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 4px 1px black;
+}
+.conten .child-berita .child-berita-kanan img {
+    width: 100%;
+    height: 220px;
+    transition: 1s;
+    transform: scale(1.1);
+}
+.conten .child-berita .child-berita-kanan p {
+    position: absolute;
+    top: 0;
+    color: rgb(255, 255, 255);
+    font-family:'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0.801), rgba(0, 4, 255, 0));
+    font-size: 17px;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    z-index: 1;
+}
+.conten .child-berita .child-berita-kanan a:hover img {
+    transform: scale(1.2);
+}
+.conten .child-berita .child-berita-kanan a:hover p {
+    color: yellow;
+}
+.conten .child-berita .child-berita-kanan a:hover span::before {
+    display: block;
+    position: absolute;
+    content: '11/22/2021';
+    width: 100%;
+    height: 30px;
+    top: 55px;
+    color: white;
+    transition: 1s;
+}
+.conten .child-berita .child-berita-kanan a:hover span {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0.158), rgba(0, 4, 255, 0.164));
+    transition: .30s;
+}
+
+
+
+
+
+
+
+
+/* =============================== container artikel ============== */
+.conten .container-artikel {
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
+.conten .container-artikel article {
+    width: 32%;
+    height:300px;
+    background-image: linear-gradient(to right, rgb(17, 0, 255), rgb(255, 255, 255));
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 4px 1px black;
+    overflow: hidden;
+    position: relative;
+}
+.conten .container-artikel article:hover {
+    box-shadow: 0 0 5px 2px black;
+}
+.conten .container-artikel article p {
+    color: white;
+}
+.conten .container-artikel article .gbr {
+    width: 100%;
+    height: 150px;
+    background-color: violet;
+}
+.conten .container-artikel article .gbr img {
+    width: 100%;
+    height: 150px;
+}
+.conten .container-artikel article h1 {
+    color: rgb(255, 255, 255);
+    font-family:'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    background-image: linear-gradient(to right, rgba(0, 4, 255, 0.493), rgba(247, 247, 247, 0.329));
+    font-size: 17px;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    filter: drop-shadow(1px 1px 3px black);
+}
+.conten .container-artikel article a {
+    color: rgb(255, 255, 255);
+    font-family:'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    background-color: rgb(91, 101, 247);
+    font-size: 17px;
+    width: 100%;
+    display: block;
+    text-align: center;
+    filter: drop-shadow(1px 1px 3px black);
+    text-decoration: none;
+    padding: 5px;
+    position: absolute;
+    bottom: 0;
+    transition: .30s;
+}
+.conten .container-artikel article a:hover {
+    background-color: rgb(66, 76, 223);
+    color: rgb(229, 255, 0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================================================================== aside ==================================== */
+aside {
+    width: 30%;
+    /* height: 1500px; */
+    /* background-color: cornflowerblue; */
+    border-radius: 5px;
+}
+/* ------------------------- search --------------------------- */
+aside .cari {
+    width: 100%;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+aside .cari input[type="text"] {
+    width: 70%;
+    height: 25px;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+aside .cari button {
+    width: 25%;
+    height: 30px;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(88, 0, 252);
+    color: cornsilk;
+}
+aside .cari button:hover {
+    color: rgb(251, 255, 0);
+    align-items: center;
+    background-color: rgb(72, 15, 177);
+}
+/* --------------------------- my profile ------------------------------- */
+aside .my-profile {
+    width: 100%;
+    height: 400px; 
+    transition: .30s;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px black;
+    overflow: hidden;
+    background-image: linear-gradient(to right, rgba(39, 17, 238, 0.973), rgb(8, 1, 0));
+}
+.peb:checked ~ .my-profile {
+    width: 37%;
+    height: 46px;
+}
+.my-profile p:nth-child(1) {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 5px;
+    font-size: 17px;
+    margin-bottom: 7px;
+    color: rgb(198, 210, 243);
+    font-weight: bold;
+    background-color: rgb(12, 8, 8);
+}
+.my-profile h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    color: rgb(231, 242, 252);
+    filter: drop-shadow(1px 1px 3px black);
+}
+.my-profile .prof {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.my-profile img {
+    width: 60%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px black;
+    margin-bottom: 15px;
+}
+.my-profile .pe {
+    margin: 5px 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 5px;
+    text-align: center;
+    color: white;
+}
+.peb {
+    position: absolute;
+    cursor: pointer;
+    -webkit-appearance: block;
+    width: 120px;
+    height: 20px;
+    background-color: rgb(231, 231, 167);
+    opacity: 0;
+}
+.peb:hover ~ .my-profile p:nth-child(1) {
+    color: rgb(147, 230, 15);
+}
+aside .ringkasan {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(167, 92, 22);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========================================================= rekomen ================================================== */
+aside .rekomen {
+    width: 100%;
+    background-image: linear-gradient(to right, rgba(39, 17, 238, 0.973), rgb(8, 1, 0));
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 1px 2px 3px black;
+}
+aside .rekomen ul {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+aside .rekomen ul li {
+    text-align: center;
+}
+aside .rekomen ul li a {
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: cornsilk;
+    text-align: center;
+}
+aside .rekomen ul li a:hover {
+    color: rgb(191, 241, 144);
+    text-decoration: underline;
+}
+aside .rekomen ul h1 {
+    text-align: center;
+    font-size: 25px;
+    font-family:'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    color: white;
+    border-bottom: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 1px 2px 3px black;
+    padding: 5px;
+    filter: drop-shadow(1px 1px 2px black);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* =================================================================== iklan ========================================================= */
+aside .iklan {
+    width: 100%;
+    height: 400px;
+    background-image: linear-gradient(to right, rgba(39, 17, 238, 0.973), rgb(8, 1, 0));
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================================================================= footer= ============================================= */ 
+.footer {
+    width: 100%;
+    background-color: rgb(61, 47, 47);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+.footer .penjelasan {
+    width: 70%;
+    border-bottom: 1px solid rgb(151, 111, 105);
+    border-top: 1px solid rgb(151, 111, 105);
+    border-radius: 20px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+.footer ul {
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+    padding: 10px;
+}
+.footer ul li a {
+    color: rgb(151, 111, 105);
+    font-family:'Arial Narrow Bold', sans-serif;
+    text-decoration: none;
+}
+.footer ul li a:hover {
+    color: rgb(223, 193, 193);
+}
+.footer p a {
+    color: rgb(105, 129, 145);
+    text-decoration: none;
+}
+.footer p {
+    padding-bottom: 15px;
+}
+.footer .ichon {
+    justify-content: space-around;
+}
+.footer .ichon li a img {
+    width: 30px;
+    height: 30;
+    transition: .30s;
+}
+.footer .ichon li img:hover {
+    transform: rotate(20deg);
+    filter: drop-shadow(2px 2px 3px black);
+}
+.footer .penjelasan h1 {
+    font-family:'Arial Narrow Bold', sans-serif;
+    color: rgb(151, 111, 105);
+}
+.footer .penjelasan h2 {
+    font-family:'Arial Narrow Bold', sans-serif;
+    color: rgb(151, 111, 105);
+}
+.footer .penjelasan p {
+    font-family:'Arial Narrow Bold', sans-serif;
+    color: rgb(151, 111, 105);
+}
+.footer .penjelasan p:nth-last-child() {
+    cursor: copy;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ============================================= responsive ======================================== */
+
+/* ============================================= media query ======================================= */
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------- pc min normal  */
+@media only screen and (max-width: 1024px) {
+    .conten .child-berita .child-berita-kiri img {
+        height: 180px;
+    }
+    .conten .child-berita .child-berita-kanan img {
+        height: 180px;
+    }
+    .conten .top-berita p {
+        font-size: 19px;
+    }
+    .conten .child-berita .child-berita-kiri p {
+        font-size: 16px;
+    }
+    .conten .child-berita .child-berita-kanan p {
+        font-size: 16px;
+    }
+    .conten .container-artikel article {
+        height: 250px;
+    }
+    .conten .container-artikel article .gbr {
+        width: 100%;
+        height: 120px;
+        background-color: violet;
+    }
+    .conten .container-artikel article .gbr img {
+        width: 100%;
+        height: 120px;
+    }
+    .conten .container-artikel article h1 {
+        font-size: 15px; 
+    }
+    .conten .container-artikel article a {
+        font-size: 15px; 
+    }
+    .conten .container-artikel article p {
+        font-size: 10px;
+    }
+    aside .rekomen ul li a {
+        font-size: 14px;
+    }
+    aside .my-profile {
+        width: 100%;
+        height: 350px; 
+    }
+}
+
+
+
+
+
+
+/* ---------------------------------------------- tablet max */
+@media only screen and (max-width: 768px) {
+    .logo .keterangan {
+        width: 50%;
+    }
+    .logo .keterangan p {
+        font-size: 15px;
+    }
+    nav ul {
+        justify-content: space-around;
+    }
+    nav ul li {
+        padding: 2px;
+        margin-right: 5px;
+    }
+    nav ul li a {
+        font-size: 11px;
+    }
+    .conten .top-berita p {
+        font-size: 15px;
+    }
+    .conten .child-berita .child-berita-kiri img {
+        height: 130px;
+    }
+    .conten .child-berita .child-berita-kiri p {
+        font-size: 12px;
+    }
+    .conten .child-berita .child-berita-kanan img {
+        height: 130px;
+    }
+    .conten .child-berita .child-berita-kanan p {
+        font-size: 12px;
+    }
+    .conten .container-artikel article {
+        height: 200px;
+    }
+    .conten .container-artikel article .gbr {
+        width: 100%;
+        height: 100px;
+        background-color: violet;
+    }
+    .conten .container-artikel article .gbr img {
+        width: 100%;
+        height: 100px;
+    }
+    .conten .container-artikel article h1 {
+        font-size: 12px; 
+    }
+    .conten .container-artikel article p {
+        font-size: 10px;
+    }
+    .conten .container-artikel article a {
+        font-size: 12px;
+    }
+    aside .cari input[type="text"] {
+        height: 20px;
+    }
+    aside .cari button {
+        height: 25px;
+    }
+    .peb {
+        width: 70px;
+        height: 10px;
+    }
+    aside .my-profile {
+        width: 100%;
+        height: 280px; 
+    }
+    .my-profile p:nth-child(1) {
+        font-size: 11px;
+    }
+    .my-profile h1 {
+        font-size: 10px;
+    }
+    .my-profile .pe {
+        font-size: 12px;
+    }
+    .peb:checked ~ .my-profile {
+        height: 30px;
+    }
+    aside .iklan {
+        height: 230px;
+    }
+    aside .rekomen ul h1 {
+        font-size: 17px;
+    }
+    aside .rekomen ul li a {
+        font-size: 12px;
+    }
+    .footer .penjelasan h1 {
+        font-size: 13px;
+    }
+    .footer .penjelasan h2 {
+        font-size: 13px;
+    }
+    .footer .penjelasan p {
+        font-size: 13px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =-=============================================== max widt 425 mobile ======================== */
+@media only screen and (max-width: 425px) {
+
+    .logo {
+        display: flex;
+        flex-direction: column;
+    }
+    .logo img {
+        width: 50%;
+        padding: 5px;
+        filter: drop-shadow(1px 1px 3px black);
+        transition: .20s;
+    }
+    .logo .keterangan {
+        width: 55%;
+        display: none;
+    }
+    .logo .keterangan p {
+        font-size: 13px;
+    }
+    .logo .keterangan p:nth-child(2) {
+        margin-left: 0;
+    }
+    nav ul {
+        /* flex-wrap: wrap; */
+        justify-content: space-evenly;
+        margin-top: 15px;
+    }
+    nav ul li {
+        margin-bottom: 10px;
+        padding-top: 10px;
+        margin-right: 2px;
+    }
+    nav ul li a {
+        font-size: 10px;
+    }
+    main {
+        width: 100%;
+        flex-direction: column;
+    }
+    .conten {
+        width: 100%;
+    }
+    .conten .top-berita p {
+        font-size: 13px;
+        padding-left: 1px;
+    }
+    .conten .child-berita .child-berita-kiri img {
+        height: 125px;
+    }
+    .conten .child-berita .child-berita-kiri p {
+        font-size:10px;
+    } 
+    .conten .child-berita .child-berita-kanan img {
+        height: 125px;
+    }
+    .conten .child-berita .child-berita-kanan p {
+        font-size: 10px;
+    }
+    .conten .container-artikel article {
+        height: 225px;
+        width: 48%;
+    }
+    .conten .container-artikel article .gbr {
+        width: 100%;
+        height: 120px;
+        background-color: violet;
+    }
+    .conten .container-artikel article .gbr img {
+        width: 100%;
+        height: 120px;
+    }
+    .conten .container-artikel article h1 {
+        font-size: 15px; 
+    }
+    .conten .container-artikel article p {
+        font-size: 10px;
+    }
+    .conten .container-artikel article a {
+        font-size: 13px;
+    }
+    aside {
+        width: 100%;
+    }
+    aside .cari {
+        margin-bottom: 3px;
+        margin-bottom: 10px;
+    }
+    aside .cari input[type="text"] {
+        height: 30px;
+        width: 60%;
+    }
+    aside .cari button {
+        height: 35px;
+        width: 37%;
+    }
+    aside .my-profile {
+        width: 100%;
+        height: 400px; 
+        margin-bottom: 15px;
+    }
+    .my-profile p:nth-child(1) {
+        font-size: 14px;
+        padding: 3px;
+    }
+    .my-profile h1 {
+        font-size: 15px;
+    }
+    .my-profile .pe {
+        font-size: 15px;
+    }
+    .peb:checked ~ .my-profile {
+        height: 50px;
+        width: 50%;
+    }
+    .peb {
+        position: absolute;
+        cursor: pointer;
+        -webkit-appearance: block;
+        width: 30%;
+        height: 20px;
+        background-color: rgb(231, 231, 167);
+        opacity: 0;
+    }
+    aside .rekomen ul h1 {
+        font-size: 20px;
+    }
+    aside .iklan {
+        height: 240px;
+    }
+    aside .rekomen ul li a {
+        font-size: 12px;
+    }
+    .footer .penjelasan h1 {
+        font-size: 13px;
+    }
+    .footer .penjelasan h2 {
+        font-size: 13px;
+    }
+    .footer .penjelasan p {
+        font-size: 13px;
+    }
+    .footer ul {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        padding: 10px;
+    }
+    .footer ul li a {
+        font-size: 12px;
+    }
+    .footer .ichon {
+        justify-content: space-evenly;
+    }
+    .footer .ichon li a img {
+        width: 20px;
+        transition: .30s;
+    }
+    aside .iklan {
+        font-size: 13px;
+    }
+    .footer p {
+        font-size: 13px;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =-=============================================== max widt 375 mobile ======================== */
+@media only screen and (max-width: 375px) {
+
+    .logo {
+        display: flex;
+        flex-direction: column;
+    }
+    .logo img {
+        width: 50%;
+        padding: 5px;
+        filter: drop-shadow(1px 1px 3px black);
+        transition: .20s;
+    }
+    .logo .keterangan {
+        width: 55%;
+        display: none;
+    }
+    .logo .keterangan p {
+        font-size: 13px;
+    }
+    .logo .keterangan p:nth-child(2) {
+        margin-left: 0;
+    }
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-top: 15px;
+    }
+    nav ul li {
+        margin-bottom: 10px;
+        padding-top: 10px;
+    }
+    nav ul li a {
+        font-size: 13px;
+    }
+    main {
+        width: 100%;
+        flex-direction: column;
+    }
+    .conten {
+        width: 100%;
+    }
+    .conten .top-berita p {
+        font-size: 10px;
+        padding-left: 1px;
+    }
+    .conten .child-berita .child-berita-kiri img {
+        height: 110px;
+    }
+    .conten .child-berita .child-berita-kiri p {
+        font-size:10px;
+    } 
+    .conten .child-berita .child-berita-kanan img {
+        height: 110px;
+    }
+    .conten .child-berita .child-berita-kanan p {
+        font-size: 10px;
+    }
+    .conten .container-artikel article {
+        height: 220px;
+        width: 48%;
+    }
+    .conten .container-artikel article .gbr {
+        width: 100%;
+        height: 110px;
+        background-color: violet;
+    }
+    .conten .container-artikel article .gbr img {
+        width: 100%;
+        height: 110px;
+    }
+    .conten .container-artikel article h1 {
+        font-size: 15px; 
+    }
+    .conten .container-artikel article p {
+        font-size: 10px;
+    }
+    .conten .container-artikel article a {
+        font-size: 13px;
+    }
+    aside {
+        width: 100%;
+    }
+    aside .cari {
+        margin-bottom: 3px;
+        margin-bottom: 10px;
+    }
+    aside .cari input[type="text"] {
+        height: 30px;
+        width: 60%;
+    }
+    aside .cari button {
+        height: 35px;
+        width: 37%;
+    }
+    aside .my-profile {
+        width: 100%;
+        height: 400px; 
+        margin-bottom: 15px;
+    }
+    .my-profile p:nth-child(1) {
+        font-size: 14px;
+        padding: 3px;
+    }
+    .my-profile h1 {
+        font-size: 15px;
+    }
+    .my-profile .pe {
+        font-size: 15px;
+    }
+    .peb:checked ~ .my-profile {
+        height: 50px;
+        width: 50%;
+    }
+    .peb {
+        position: absolute;
+        cursor: pointer;
+        -webkit-appearance: block;
+        width: 30%;
+        height: 20px;
+        background-color: rgb(231, 231, 167);
+        opacity: 0;
+    }
+    aside .rekomen ul h1 {
+        font-size: 20px;
+    }
+    aside .iklan {
+        height: 240px;
+    }
+    aside .rekomen ul li a {
+        font-size: 12px;
+    }
+    .footer .penjelasan h1 {
+        font-size: 13px;
+    }
+    .footer .penjelasan h2 {
+        font-size: 13px;
+    }
+    .footer .penjelasan p {
+        font-size: 13px;
+    }
+    .footer ul {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        padding: 10px;
+    }
+    .footer ul li a {
+        font-size: 12px;
+    }
+    .footer .ichon {
+        justify-content: space-evenly;
+    }
+    .footer .ichon li a img {
+        width: 20px;
+        transition: .30s;
+    }
+    aside .iklan {
+        font-size: 13px;
+    }
+    .footer p {
+        font-size: 13px;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =-=============================================== max widt 320 mobile ======================== */
+ @media only screen and (max-width: 320px) {
+
+    .logo {
+        display: flex;
+        flex-direction: column;
+    }
+    .logo img {
+        width: 50%;
+        padding: 5px;
+        filter: drop-shadow(1px 1px 3px black);
+        transition: .20s;
+    }
+    .logo .keterangan {
+        width: 55%;
+        display: none;
+    }
+    .logo .keterangan p {
+        font-size: 13px;
+    }
+    .logo .keterangan p:nth-child(2) {
+        margin-left: 0;
+    }
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-top: 10px;
+    }
+    nav ul li {
+        margin-bottom: 10px;
+        padding-top: 10px;
+    }
+    nav ul li a {
+        font-size: 10px;
+    }
+    main {
+        width: 100%;
+        flex-direction: column;
+    }
+    .conten {
+        width: 100%;
+    }
+    .conten .top-berita p {
+        font-size: 10px;
+        padding-left: 1px;
+    }
+    .conten .child-berita .child-berita-kiri img {
+        height: 100px;
+    }
+    .conten .child-berita .child-berita-kiri p {
+        font-size:10px;
+    } 
+    .conten .child-berita .child-berita-kanan img {
+        height: 100px;
+    }
+    .conten .child-berita .child-berita-kanan p {
+        font-size: 10px;
+    }
+    .conten .container-artikel article {
+        height: 200px;
+        width: 48%;
+    }
+    .conten .container-artikel article .gbr {
+        width: 100%;
+        height: 100px;
+        background-color: violet;
+    }
+    .conten .container-artikel article .gbr img {
+        width: 100%;
+        height: 100px;
+    }
+    .conten .container-artikel article h1 {
+        font-size: 13px; 
+    }
+    .conten .container-artikel article p {
+        font-size: 10px;
+    }
+    .conten .container-artikel article a {
+        font-size: 13px;
+    }
+    aside {
+        width: 100%;
+    }
+    aside .cari {
+        margin-bottom: 3px;
+        margin-bottom: 10px;
+    }
+    aside .cari input[type="text"] {
+        height: 30px;
+        width: 60%;
+    }
+    aside .cari button {
+        height: 35px;
+        width: 37%;
+    }
+    aside .my-profile {
+        width: 100%;
+        height: 400px; 
+        margin-bottom: 15px;
+    }
+    .my-profile p:nth-child(1) {
+        font-size: 14px;
+        padding: 3px;
+    }
+    .my-profile h1 {
+        font-size: 15px;
+    }
+    .my-profile .pe {
+        font-size: 15px;
+    }
+    .peb:checked ~ .my-profile {
+        height: 50px;
+        width: 50%;
+    }
+    .peb {
+        position: absolute;
+        cursor: pointer;
+        -webkit-appearance: block;
+        width: 30%;
+        height: 20px;
+        background-color: rgb(231, 231, 167);
+        opacity: 0;
+    }
+    aside .rekomen ul h1 {
+        font-size: 20px;
+    }
+    aside .iklan {
+        height: 240px;
+    }
+    aside .rekomen ul li a {
+        font-size: 12px;
+    }
+    .footer .penjelasan h1 {
+        font-size: 13px;
+    }
+    .footer .penjelasan h2 {
+        font-size: 13px;
+    }
+    .footer .penjelasan p {
+        font-size: 13px;
+    }
+    .footer ul {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        padding: 10px;
+    }
+    .footer ul li a {
+        font-size: 12px;
+    }
+    .footer .ichon {
+        justify-content: space-evenly;
+    }
+    .footer .ichon li a img {
+        width: 20px;
+        transition: .30s;
+    }
+    aside .iklan {
+        font-size: 13px;
+    }
+    .footer p {
+        font-size: 13px;
+    }
+  }
