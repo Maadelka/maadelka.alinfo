@@ -4,13 +4,6 @@ body {
     display: flex;
     flex-direction: column;
 }
-
-
-
-
-
-
-
 /* ================================================= logo ====================================== */
 .logo {
     width: 100%;
@@ -52,18 +45,6 @@ body {
     opacity: 1;
     color: rgb(208, 240, 238);
 }
-
-
-
-
-
-
-
-
-
-
-
-
 /* =================================================== HEADER ========================================= */
 header {
     display: flex;
@@ -107,23 +88,11 @@ nav ul li a:hover {
     color: yellow;
     background-color: rgb(24, 36, 216);
 }
-
-
-
-
 /* ==================== warna aktif halaman ==================== */
 nav ul li .news {
     color: yellow;
     background-color: rgb(24, 36, 216);
 }
-
-
-
-
-
-
-
-
 /* ================================================== MAIN =========================================== */
 main {
     top: 50px;
@@ -135,14 +104,6 @@ main {
     margin-bottom: 50px;
     overflow: hidden;
 }
-
-
-
-
-
-
-
-
 /* ============================================== conten ================================== */
 .conten {
     width: 69%;
@@ -151,22 +112,6 @@ main {
     position: relative;
     overflow: hidden;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* -======================================== top news ===================================== */
 .conten .top-berita {
     width: 100%;
@@ -220,18 +165,6 @@ main {
     color: white;
     transition: 1s;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 /* ================= child berita ===================== */
 .conten .child-berita {
     width: 100%;
@@ -353,14 +286,6 @@ main {
     background-image: linear-gradient(to right, rgba(255, 0, 0, 0.158), rgba(0, 4, 255, 0.164));
     transition: .30s;
 }
-
-
-
-
-
-
-
-
 /* =============================== container artikel ============== */
 .conten .container-artikel {
     width: 100%;
@@ -424,23 +349,6 @@ main {
     background-color: rgb(66, 76, 223);
     color: rgb(229, 255, 0);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ================================================================== aside ==================================== */
 aside {
     width: 30%;
@@ -549,19 +457,6 @@ aside .ringkasan {
     height: 50px;
     background-color: rgb(167, 92, 22);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ========================================================= rekomen ================================================== */
 aside .rekomen {
     width: 100%;
@@ -602,17 +497,6 @@ aside .rekomen ul h1 {
     padding: 5px;
     filter: drop-shadow(1px 1px 2px black);
 }
-
-
-
-
-
-
-
-
-
-
-
 /* =================================================================== iklan ========================================================= */
 aside .iklan {
     width: 100%;
@@ -626,19 +510,6 @@ aside .iklan {
     font-weight: bold;
     color: white;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ================================================================= footer= ============================================= */ 
 .footer {
     width: 100%;
@@ -708,38 +579,9 @@ aside .iklan {
 .footer .penjelasan p:nth-last-child() {
     cursor: copy;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ============================================= responsive ======================================== */
 
 /* ============================================= media query ======================================= */
-
-
-
-
-
-
-
 /* ----------------------------------------------------------------- pc min normal  */
 @media only screen and (max-width: 1024px) {
     .conten .child-berita .child-berita-kiri img {
@@ -786,12 +628,6 @@ aside .iklan {
         height: 350px; 
     }
 }
-
-
-
-
-
-
 /* ---------------------------------------------- tablet max */
 @media only screen and (max-width: 768px) {
     .logo .keterangan {
@@ -891,13 +727,336 @@ aside .iklan {
         font-size: 13px;
     }
 }
+/* =-=============================================== max widt 425 mobile ======================== */
+@media only screen and (max-width: 425px) {
 
-
-
-
-
-
+    .logo {
+        display: flex;
+        flex-direction: column;
+    }
+    .logo img {
+        width: 50%;
+        padding: 5px;
+        filter: drop-shadow(1px 1px 3px black);
+        transition: .20s;
+    }
+    .logo .keterangan {
+        width: 55%;
+        display: none;
+    }
+    .logo .keterangan p {
+        font-size: 13px;
+    }
+    .logo .keterangan p:nth-child(2) {
+        margin-left: 0;
+    }
+    nav ul {
+        /* flex-wrap: wrap; */
+        justify-content: space-evenly;
+        margin-top: 15px;
+    }
+    nav ul li {
+        margin-bottom: 10px;
+        padding-top: 10px;
+        margin-right: 2px;
+    }
+    nav ul li a {
+        font-size: 10px;
+    }
+    main {
+        width: 100%;
+        flex-direction: column;
+    }
+    .conten {
+        width: 100%;
+    }
+    .conten .top-berita p {
+        font-size: 13px;
+        padding-left: 1px;
+    }
+    .conten .child-berita .child-berita-kiri img {
+        height: 125px;
+    }
+    .conten .child-berita .child-berita-kiri p {
+        font-size:10px;
+    } 
+    .conten .child-berita .child-berita-kanan img {
+        height: 125px;
+    }
+    .conten .child-berita .child-berita-kanan p {
+        font-size: 10px;
+    }
+    .conten .container-artikel article {
+        height: 225px;
+        width: 48%;
+    }
+    .conten .container-artikel article .gbr {
+        width: 100%;
+        height: 120px;
+        background-color: violet;
+    }
+    .conten .container-artikel article .gbr img {
+        width: 100%;
+        height: 120px;
+    }
+    .conten .container-artikel article h1 {
+        font-size: 15px; 
+    }
+    .conten .container-artikel article p {
+        font-size: 10px;
+    }
+    .conten .container-artikel article a {
+        font-size: 13px;
+    }
+    aside {
+        width: 100%;
+    }
+    aside .cari {
+        margin-bottom: 3px;
+        margin-bottom: 10px;
+    }
+    aside .cari input[type="text"] {
+        height: 30px;
+        width: 60%;
+    }
+    aside .cari button {
+        height: 35px;
+        width: 37%;
+    }
+    aside .my-profile {
+        width: 100%;
+        height: 400px; 
+        margin-bottom: 15px;
+    }
+    .my-profile p:nth-child(1) {
+        font-size: 14px;
+        padding: 3px;
+    }
+    .my-profile h1 {
+        font-size: 15px;
+    }
+    .my-profile .pe {
+        font-size: 15px;
+    }
+    .peb:checked ~ .my-profile {
+        height: 50px;
+        width: 50%;
+    }
+    .peb {
+        position: absolute;
+        cursor: pointer;
+        -webkit-appearance: block;
+        width: 30%;
+        height: 20px;
+        background-color: rgb(231, 231, 167);
+        opacity: 0;
+    }
+    aside .rekomen ul h1 {
+        font-size: 20px;
+    }
+    aside .iklan {
+        height: 240px;
+    }
+    aside .rekomen ul li a {
+        font-size: 12px;
+    }
+    .footer .penjelasan h1 {
+        font-size: 13px;
+    }
+    .footer .penjelasan h2 {
+        font-size: 13px;
+    }
+    .footer .penjelasan p {
+        font-size: 13px;
+    }
+    .footer ul {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        padding: 10px;
+    }
+    .footer ul li a {
+        font-size: 12px;
+    }
+    .footer .ichon {
+        justify-content: space-evenly;
+    }
+    .footer .ichon li a img {
+        width: 20px;
+        transition: .30s;
+    }
+    aside .iklan {
+        font-size: 13px;
+    }
+    .footer p {
+        font-size: 13px;
+    }
+  }
 /* =-=============================================== max widt 375 mobile ======================== */
+@media only screen and (max-width: 375px) {
+
+    .logo {
+        display: flex;
+        flex-direction: column;
+    }
+    .logo img {
+        width: 50%;
+        padding: 5px;
+        filter: drop-shadow(1px 1px 3px black);
+        transition: .20s;
+    }
+    .logo .keterangan {
+        width: 55%;
+        display: none;
+    }
+    .logo .keterangan p {
+        font-size: 13px;
+    }
+    .logo .keterangan p:nth-child(2) {
+        margin-left: 0;
+    }
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-top: 15px;
+    }
+    nav ul li {
+        margin-bottom: 10px;
+        padding-top: 10px;
+    }
+    nav ul li a {
+        font-size: 13px;
+    }
+    main {
+        width: 100%;
+        flex-direction: column;
+    }
+    .conten {
+        width: 100%;
+    }
+    .conten .top-berita p {
+        font-size: 10px;
+        padding-left: 1px;
+    }
+    .conten .child-berita .child-berita-kiri img {
+        height: 110px;
+    }
+    .conten .child-berita .child-berita-kiri p {
+        font-size:10px;
+    } 
+    .conten .child-berita .child-berita-kanan img {
+        height: 110px;
+    }
+    .conten .child-berita .child-berita-kanan p {
+        font-size: 10px;
+    }
+    .conten .container-artikel article {
+        height: 220px;
+        width: 48%;
+    }
+    .conten .container-artikel article .gbr {
+        width: 100%;
+        height: 110px;
+        background-color: violet;
+    }
+    .conten .container-artikel article .gbr img {
+        width: 100%;
+        height: 110px;
+    }
+    .conten .container-artikel article h1 {
+        font-size: 15px; 
+    }
+    .conten .container-artikel article p {
+        font-size: 10px;
+    }
+    .conten .container-artikel article a {
+        font-size: 13px;
+    }
+    aside {
+        width: 100%;
+    }
+    aside .cari {
+        margin-bottom: 3px;
+        margin-bottom: 10px;
+    }
+    aside .cari input[type="text"] {
+        height: 30px;
+        width: 60%;
+    }
+    aside .cari button {
+        height: 35px;
+        width: 37%;
+    }
+    aside .my-profile {
+        width: 100%;
+        height: 400px; 
+        margin-bottom: 15px;
+    }
+    .my-profile p:nth-child(1) {
+        font-size: 14px;
+        padding: 3px;
+    }
+    .my-profile h1 {
+        font-size: 15px;
+    }
+    .my-profile .pe {
+        font-size: 15px;
+    }
+    .peb:checked ~ .my-profile {
+        height: 50px;
+        width: 50%;
+    }
+    .peb {
+        position: absolute;
+        cursor: pointer;
+        -webkit-appearance: block;
+        width: 30%;
+        height: 20px;
+        background-color: rgb(231, 231, 167);
+        opacity: 0;
+    }
+    aside .rekomen ul h1 {
+        font-size: 20px;
+    }
+    aside .iklan {
+        height: 240px;
+    }
+    aside .rekomen ul li a {
+        font-size: 12px;
+    }
+    .footer .penjelasan h1 {
+        font-size: 13px;
+    }
+    .footer .penjelasan h2 {
+        font-size: 13px;
+    }
+    .footer .penjelasan p {
+        font-size: 13px;
+    }
+    .footer ul {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        padding: 10px;
+    }
+    .footer ul li a {
+        font-size: 12px;
+    }
+    .footer .ichon {
+        justify-content: space-evenly;
+    }
+    .footer .ichon li a img {
+        width: 20px;
+        transition: .30s;
+    }
+    aside .iklan {
+        font-size: 13px;
+    }
+    .footer p {
+        font-size: 13px;
+    }
+  }
+/* =-=============================================== max widt 320 mobile ======================== */
  @media only screen and (max-width: 320px) {
 
     .logo {
