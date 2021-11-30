@@ -57,6 +57,9 @@ input[type='checkbox'] {
 /*     filter: drop-shadow(0 0 3px black); */
     overflow: hidden;
 }
+input[type='checkbox']:focus {
+    outline: none;
+}
 input[type="checkbox"]:before {
     content: 'MENU';
     width: 65px;
