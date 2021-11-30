@@ -78,6 +78,9 @@ input[type="checkbox"]:before {
     align-items: center;
     color: white;
 }
+input[type="checkbox"]:before:focus {
+    outline: none;
+}
 input:checked[type="checkbox"]::before {
     background-color: rgb(68, 61, 131);
     color: yellow;
