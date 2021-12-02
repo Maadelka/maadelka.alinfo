@@ -1,0 +1,293 @@
+/* ================================================== MAIN  */
+main {
+    top: 50px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    overflow: hidden;
+    /* background-color: rgb(135, 154, 238); */
+}
+
+/* ============================================== conten  */
+.conten {
+    width: 69%;
+    background-image: linear-gradient(to right, rgb(92, 84, 214), rgb(186, 196, 240));
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.tgl-upload {
+    color: white;
+    padding: 2px;
+}
+.tgl-upload a {
+    text-decoration: none;
+}
+.tgl-upload a:hover {
+    color: rgb(52, 52, 196);
+}
+
+/* -------- h1 judul artikel */
+.jdl-art {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 6px;
+    /* margin-bottom: 10px; */
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(to right, rgb(17, 0, 255), rgb(105, 104, 160));
+}
+
+.gambar-article {
+    box-shadow: 2px 2px 3px black;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+.gambar-article img {
+    margin-top: -55px;
+    margin-left: -20px;
+    transition: 1s;
+}
+.gambar-article img:hover {
+    transform: scale(1.1);
+}
+.penulis {
+    color: rgb(141, 199, 201);
+    padding: 3px;
+}
+
+.isi-artikel {
+    width: 100%;
+    margin-bottom: 40px;
+}
+.isi-artikel p {
+    padding: 3px;
+    font-size: 17px;
+    font-family:'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.isi-artikel p:nth-child(4) a {
+    text-decoration: none;
+    color: rgb(63, 64, 70);
+}
+.isi-artikel p:nth-child(4) a:hover {
+    text-decoration: underline;
+    color: rgb(58, 58, 63);
+}
+.isi-artikel p:nth-child(3) {
+    font-size: 20px;
+    font-weight: bold;
+}
+.isi-artikel p:nth-child(13){
+    font-size: 20px;
+    font-weight: bold;
+}
+.isi-artikel p:nth-child(13) a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.isi-artikel p:nth-child(13) a:hover {
+    color: yellow;
+}
+.isi-artikel p:nth-child(3) a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.isi-artikel p:nth-child(3) a:hover {
+    color: yellow;
+}
+.isi-artikel table {
+    border: 2px solid black;
+    text-align: center;
+    margin: 10px auto;
+    background-color: rgb(68, 206, 183);
+    font-family:'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.isi-artikel table tr {
+    border: 1px solid black;
+    padding: 4px;
+    
+}
+.isi-artikel table td {
+    border: 1px solid black;
+    padding: 4px;
+}
+
+
+
+/* == */
+/* ------------ berita lainnya */
+.berita-lain {
+    width: 100%;
+    /* height: 500px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* background-color: #fff; */
+}
+
+.berita-lain .ket-berit {
+    width: 100%;
+    border-bottom: 1px solid rgb(61, 59, 59);
+    margin-bottom: 10px;
+}
+.berita-lain .ket-berit p {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+   
+}
+/*  */
+.berita-lain .terkait {
+    width: 30%;
+    height: 190px;
+    background-image: linear-gradient(to right, rgb(17, 0, 255), rgb(5, 5, 5));
+    border-radius: 5px;
+    margin-bottom: 5px;
+    overflow: hidden;
+    box-shadow: 2px 2px 3px rgb(0, 0, 0);
+}
+.berita-lain .terkait:hover {
+    box-shadow: 2px 2px 3px rgb(255, 255, 255);
+}
+.berita-lain .terkait a:hover .gbr-rek img {
+    transform: scale(1.1);
+}
+.berita-lain .terkait p {
+    font-size: 10px;
+    color: rgb(172, 212, 219);
+}
+
+.berita-lain .terkait .gbr-rek {
+    width: 100%;
+    height: 130px;
+    overflow: hidden;
+    background-color: rgb(48, 27, 27);
+}
+.berita-lain .terkait .gbr-rek img {
+    width: 100%;
+    display: block;
+    height: 130px;
+    transition: 1s;
+}
+.berita-lain .terkait h1 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    
+}
+.berita-lain .terkait h1 a {
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+    transition: .50s;
+}
+.berita-lain .terkait:hover h1 a {
+    color: yellow;
+}
+.berita-lain .terkait h1 a:hover {
+    color: rgb(195, 213, 240);
+}
+
+
+
+
+aside {
+    width: 30%;
+    background-image: linear-gradient(to right, rgb(17, 0, 255), rgb(186, 196, 240));
+    border-radius: 5px;
+}
+
+/* ------------------------- search --------------------------- */
+aside .cari {
+    width: 100%;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+aside .cari input[type="text"] {
+    width: 70%;
+    height: 25px;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+aside .cari button {
+    width: 25%;
+    height: 30px;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(88, 0, 252);
+    color: cornsilk;
+}
+aside .cari button:hover {
+    color: rgb(251, 255, 0);
+    align-items: center;
+    background-color: rgb(72, 15, 177);
+}
+
+/* ========================================================= rekomen  */
+aside .rekomen {
+    width: 100%;
+    background-image: linear-gradient(to right, rgba(39, 17, 238, 0.973), rgb(8, 1, 0));
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 1px 2px 3px black;
+}
+aside .rekomen ul {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+aside .rekomen ul li {
+    text-align: center;
+}
+aside .rekomen ul li a {
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: cornsilk;
+    text-align: center;
+}
+aside .rekomen ul li a:hover {
+    color: rgb(191, 241, 144);
+    text-decoration: underline;
+}
+aside .rekomen ul h1 {
+    text-align: center;
+    font-size: 25px;
+    font-family:'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    color: white;
+    border-bottom: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 1px 2px 3px black;
+    padding: 5px;
+    filter: drop-shadow(1px 1px 2px black);
+}
+/* ================================================ iklan  */
+aside .iklan {
+    width: 100%;
+    height: 400px;
+    background-image: linear-gradient(to right, rgba(39, 17, 238, 0.973), rgb(8, 1, 0));
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    color: white;
+}
