@@ -44,9 +44,10 @@ main {
     overflow: hidden;
 }
 .gambar-article img {
-    margin-top: -55px;
-    margin-left: -20px;
+    margin-top: -92px;
+    margin-left: 2px;
     transition: 1s;
+    width: 100%;
 }
 .gambar-article img:hover {
     transform: scale(1.1);
@@ -134,7 +135,7 @@ main {
 /*  */
 .berita-lain .terkait {
     width: 30%;
-    height: 190px;
+    height: 200px;
     background-image: linear-gradient(to right, rgb(17, 0, 255), rgb(5, 5, 5));
     border-radius: 5px;
     margin-bottom: 15px;
@@ -154,14 +155,14 @@ main {
 
 .berita-lain .terkait .gbr-rek {
     width: 100%;
-    height: 130px;
+    height: 150px;
     overflow: hidden;
     background-color: rgb(48, 27, 27);
 }
 .berita-lain .terkait .gbr-rek img {
     width: 100%;
     display: block;
-    height: 130px;
+    height: 150px;
     transition: 1s;
 }
 .berita-lain .terkait h1 {
@@ -280,6 +281,43 @@ aside .iklan {
 
 
 /* ================== media query =========== */
+@media only screen and (max-width: 1366px) {
+    .gambar-article img {
+        margin-top: -77px;
+        margin-left: 24px;
+        transition: 1s;
+        transform: scale(1.1);
+    }
+    .gambar-article img:hover {
+        transform: scale(1.2);
+    }
+    .berita-lain .terkait .gbr-rek {
+        height: 140px;
+    }
+    .berita-lain .terkait .gbr-rek img {
+        height: 140px;
+    }
+    .berita-lain .terkait {
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 1216px) {
+    .gambar-article img {
+        margin-top: -60px;
+        margin-left: 1px;
+        transition: 1s;
+        transform: scale(1.1);
+    }
+    .gambar-article img:hover {
+        transform: scale(1.2);
+    }
+}
+
+
+
+
+
 @media only screen and (max-width: 1024px) {
     .gambar-article img {
         margin-left: -55px;
@@ -292,6 +330,9 @@ aside .iklan {
     }
     .penulis {
         font-size: 14px;
+    }
+    .isi-artikel p {
+        font-size: 15px;
     }
 }
 /* ---------------------------------------------- tablet max */
@@ -360,12 +401,12 @@ aside .iklan {
     }
     .gambar-article img {
         margin-top: -35px;
-        margin-left: -55px;
+        margin-left: -49px;
         transition: 1s;
         width: 130%;
     }
     .isi-artikel p {
-        font-size: 16px;
+        font-size: 13px;
     }
     .berita-lain .terkait {
         width: 47%;
@@ -389,6 +430,9 @@ aside .iklan {
     .gambar-article {
         width: 100%;
         height: 175px;
+    }
+    .isi-artikel p {
+        font-size: 13px;
     }
     .gambar-article img {
         margin-top: -25px;
@@ -418,3 +462,4 @@ aside .iklan {
         font-size: 13px;
     }
 }
+
